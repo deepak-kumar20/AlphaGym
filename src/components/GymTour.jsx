@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import gymTourVideo from "../assets/WhatsApp Video 2025-11-17 at 9.16.41 PM.mp4";
+import gymInterior from "../assets/GymInterior.jpeg";
 
 export default function GymTour() {
   return (
@@ -14,11 +14,11 @@ export default function GymTour() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Take a Virtual Tour
+            Welcome to Alpha Gym 2.0
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Experience Alpha Gym 2.0 - Explore our state-of-the-art facilities,
-            premium equipment, and welcoming atmosphere
+            Experience our state-of-the-art facilities, premium equipment, and
+            welcoming atmosphere
           </p>
         </motion.div>
 
@@ -29,15 +29,13 @@ export default function GymTour() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative max-w-5xl mx-auto"
         >
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-black">
-            <video
-              controls
-              className="w-full h-auto"
-              poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=675&fit=crop&q=80"
-            >
-              <source src={gymTourVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+            <img
+              src={gymInterior}
+              alt="Alpha Gym Interior"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
 
           {/* Feature highlights below video */}
