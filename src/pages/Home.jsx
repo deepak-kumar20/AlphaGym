@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
@@ -13,9 +13,10 @@ import useSmoothScroll from "../hooks/useSmoothScroll";
 
 export default function Home() {
   useSmoothScroll();
+  const navigate = useNavigate();
 
   const onJoin = () => {
-    window.location.href = "/contact";
+    navigate("/contact");
   };
 
   const stats = [
@@ -177,8 +178,6 @@ export default function Home() {
           </motion.div>
         </div>
       </motion.section>
-
-      
     </div>
   );
 }
