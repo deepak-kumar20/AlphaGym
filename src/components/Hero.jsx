@@ -31,7 +31,7 @@ export default function Hero({ onCTAClick }) {
               to="/shop"
               className="px-6 py-3 border border-gray-300 dark:border-white/10 rounded-lg text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-white/5 transition-colors"
             >
-              View Programs
+              Shop Now
             </Link>
           </div>
         </motion.div>

@@ -16,7 +16,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   const onJoin = () => {
-    navigate("/contact");
+    navigate("/plans");
   };
 
   const stats = [

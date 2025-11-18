@@ -78,7 +78,7 @@ export default function Navbar() {
           </motion.button>
 
           <Link
-            to="/contact"
+            to="/plans"
             className="ml-4 px-4 py-2 bg-accent text-white rounded-md font-semibold hover:bg-accent/90"
           >
             Join Now
@@ -160,7 +160,7 @@ export default function Navbar() {
               </NavLink>
             ))}
             <Link
-              to="/contact"
+              to="/plans"
               onClick={() => setOpen(false)}
               className="mt-2 px-4 py-2 bg-accent text-white rounded-md font-semibold inline-block"
             >
